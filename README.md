@@ -1,3 +1,4 @@
+//HAI MBAK AYU PAKARTI LUHUR
 # TR-University-of-Derby
 #include <windows.h>
 #ifdef _APPLE_
