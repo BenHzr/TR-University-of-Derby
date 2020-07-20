@@ -2318,8 +2318,173 @@ void jendelakanan()
 	glVertex3f(269.0,-50.0,-86.5);
 	glVertex3f(220.0,-50.0,-95.6);
 	glEnd();
+void meja()
+{
+	glLineWidth(5);
+	glColor3f(139.0 / 255.0, 69.0 / 255.0, 19.0 / 255.0);
+	glBegin(GL_LINES);
+	//vertical
+	glVertex3f(30.0, -100.0, -180.0);
+	glVertex3f(30.0, 0.0, -180.0);
+	glVertex3f(30.0, -100.0, -150.0);
+	glVertex3f(30.0, 0.0, -150.0);
+	
+	glVertex3f(80.0, -100.0, -180.0);
+	glVertex3f(80.0, 0.0, -180.0);
+	glVertex3f(80.0, -100.0, -150.0);
+	glVertex3f(80.0, 0.0, -150.0);
+	glEnd();
+
+	glBegin(GL_POLYGON);
+	glColor3f (1, 1, 10);
+	glVertex3f(20.0,0.0,-190.0);
+	glVertex3f(20.0,0.0,-140.0);
+	glVertex3f(90.0,0.0,-140.0);
+	glVertex3f(90.0,0.0,-190.0);
+	glEnd();
+}
+void kursi()
+{
+	glLineWidth(5);
+	glColor3f(139.0 / 255.0, 69.0 / 255.0, 19.0 / 255.0);
+	glBegin(GL_LINES);
+	//vertical
+	glVertex3f(0.0, -100.0, -175.0);
+	glVertex3f(0.0, -40.0, -175.0);
+	glVertex3f(0.0, -100.0, -155.0);
+	glVertex3f(0.0, -40.0, -155.0);
+	
+	glVertex3f(-35.0, -100.0, -175.0);
+	glVertex3f(-35.0, 20.0, -175.0);
+	glVertex3f(-35.0, -100.0, -155.0);
+	glVertex3f(-35.0, 20.0, -155.0);
+	glEnd();
+
+	glBegin(GL_POLYGON);
+	glColor3f (1, 1, 1);
+	glVertex3f(5.0,-40.0,-153.0);
+	glVertex3f(-35.0,-40.0,-153.0);
+	glVertex3f(-35.0,-40.0,-178.0);
+	glVertex3f(5.0,-40.0,-178.0);
+	glEnd();
+
+	glBegin(GL_POLYGON);
+	glColor3f (1, 1, 1);
+	glVertex3f(-32.8,20.0,-154.0);
+	glVertex3f(-32.8,-20.0,-154.0);
+	glVertex3f(-32.8,-20.0,-177.0);
+	glVertex3f(-32.8,20.0,-177.0);
+	glEnd();
+}
+void papantulis()
+{
+	//kanan
+	glBegin(GL_POLYGON);
+	glColor3f (1, 1, 1);
+	glVertex3f(209.0,0.0,-150.0);
+	glVertex3f(209.0,150.0,-150.0);
+	glVertex3f(209.0,150.0,-250.0);
+	glVertex3f(209.0,0.0,-250.0);
+	glEnd();
+
+	glLineWidth(3);
+	glBegin(GL_LINE_LOOP);
+	glColor3f (0, 0, 0);
+	glVertex3f(209.0,0.0,-150.0);
+	glVertex3f(209.0,150.0,-150.0);
+	glVertex3f(209.0,150.0,-250.0);
+	glVertex3f(209.0,0.0,-250.0);
+	glEnd();
+}
+void lcd()
+{
+	glLineWidth(7);
+	glColor3f(139.0 / 255.0, 69.0 / 255.0, 19.0 / 255.0);
+	glBegin(GL_LINES);
+	//vertical
+	glVertex3f(0.0, 300.0, -200.0);
+	glVertex3f(0.0, 150.0, -200.0);
+	glEnd();
+
+	glPointSize(20);
+	glColor3f(0, 0, 0 );
+	glBegin(GL_POINTS);	
+	glVertex3f(0.0, 150.0, -195.0);
+	glEnd();
 
 }
+void lemari()
+{
+	//lemariblkng
+	glBegin(GL_POLYGON);
+	glColor3f(139.0 / 255.0, 69.0 / 255.0, 19.0 / 255.0);
+	glVertex3f(-160.0,-100.0,-299.0);
+	glVertex3f(-160.0,120.0,-299.0);
+	glVertex3f(-20.0,120.0,-299.0);
+	glVertex3f(-20.0,-100.0,-299.0);
+	glEnd();
+
+	//lemaridepan
+	glBegin(GL_POLYGON);
+	glColor3f(139.0 / 255.0, 69.0 / 255.0, 19.0 / 255.0);
+	glVertex3f(-160.0,-100.0,-240.0);
+	glVertex3f(-160.0,120.0,-240.0);
+	glVertex3f(-20.0,120.0,-240.0);
+	glVertex3f(-20.0,-100.0,-240.0);
+	glEnd();
+
+	//lemarikiri
+	glBegin(GL_POLYGON);
+	glColor3f(139.0 / 255.0, 69.0 / 255.0, 19.0 / 255.0);
+	glVertex3f(-160.0,-100.0,-299.0);
+	glVertex3f(-160.0,120.0,-299.0);
+	glVertex3f(-160.0,120.0,-240.0);
+	glVertex3f(-160.0,-100.0,-240.0);
+	glEnd();
+
+	//lemaritengah
+	glBegin(GL_POLYGON);
+	glColor3f(139.0 / 255.0, 69.0 / 255.0, 19.0 / 255.0);
+	glVertex3f(-20.0,-100.0,-299.0);
+	glVertex3f(-20.0,120.0,-299.0);
+	glVertex3f(-20.0,120.0,-240.0);
+	glVertex3f(-20.0,-100.0,-240.0);
+	glEnd();
+
+	//lemariatas
+	glBegin(GL_POLYGON);
+	glColor3f(39.0 / 255.0, 69.0 / 255.0, 19.0 / 255.0);
+	glVertex3f(-160.0,120.0,-299.0);
+	glVertex3f(-160.0,120.0,-240.0);
+	glVertex3f(-20.0,120.0,-240.0);
+	glVertex3f(-20.0,120.0,-299.0);
+	glEnd();
+
+	//lemaribawah
+	glBegin(GL_POLYGON);
+	glColor3f(39.0 / 255.0, 69.0 / 255.0, 19.0 / 255.0);
+	glVertex3f(-160.0,-100.0,-299.0);
+	glVertex3f(-160.0,-100.0,-240.0);
+	glVertex3f(-20.0,-100.0,-240.0);
+	glVertex3f(-20.0,-100.0,-299.0);
+	glEnd();
+
+	glLineWidth(5);
+	glColor3f(0,0,0);
+	glBegin(GL_LINES);
+	//vertical
+	glVertex3f(-90.0, 120.0, -239.8);
+	glVertex3f(-90.0, -100.0, -239.8);
+	glEnd();
+
+	glPointSize(5);
+	glColor3f(0, 0, 0 );
+	glBegin(GL_POINTS);	
+	glVertex3f(-100.0, 10.0, -239.8);
+	glVertex3f(-80.0, 10.0, -239.8);
+	glEnd();
+}
+
 void keyboard(unsigned char key, int x, int y)
 {
 	switch (key)
@@ -2400,7 +2565,11 @@ void tampil(void)
 	jendelapolkanan();
 	jendelakiri();
 	jendelakanan();
-
+	meja();
+	kursi();
+	papantulis();
+	lcd();
+	lemari();
 
 	glPopMatrix();
 
