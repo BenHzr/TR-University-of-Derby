@@ -2318,6 +2318,7 @@ void jendelakanan()
 	glVertex3f(269.0,-50.0,-86.5);
 	glVertex3f(220.0,-50.0,-95.6);
 	glEnd();
+	
 void meja()
 {
 	glLineWidth(5);
