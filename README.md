@@ -3880,21 +3880,7 @@ void bola()
 
 	glPopMatrix();
 }
-void ling(int jari2, int jumlah_titik, int x_tengah, int y_tengah) {
-	glBegin(GL_POLYGON);
-	for (i = 0; i <= 360; i++) {
-		float sudut = i * (2 * PI / jumlah_titik);
-		float x = x_tengah + jari2 * cos(sudut);
-		float y = y_tengah + jari2 * sin(sudut);
-		glVertex2f(x, y);
-	}
-	glEnd();
-}
-void lingkaran()
-{
-	glColor3f(1, 1, 1);
-	ling(20, 200, 70, 118);
-}
+
 
 void keyboard(unsigned char key, int x, int y)
 {
@@ -3967,6 +3953,8 @@ void tampil(void)
 	glPushMatrix();
 	jenperpotongan();
 	atap();
+	tabung();
+	lantai();
 	atas();
 	tembokblkng();
 	temboksmpgkiri();
@@ -3985,12 +3973,9 @@ void tampil(void)
 	tembokdalam();
 	paralon();
 	kubah();
-	tabung();
 	bola();
 	UD();
-	lantai();
 	cerobong();
-	//lingkaran();
 
 	glPopMatrix();
 
